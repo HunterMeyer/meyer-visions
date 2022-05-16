@@ -1,85 +1,144 @@
 export default {
-  author: "Sam Xie",
+  author: "Meyer Visions",
   hero: {
-    subtitle: "Software engineer at Cash App.",
-    description: "Building reliable and scalable systems by day. Leveraging technology to launch fully featured products by night.",
-    cta: "Browse Products",
+    // subtitle: "Seeing the future, today.",
+    description: "Meyer Visions is a venture capital firm that invests early in founders building fast-growing technology companies. We focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.",
+    cta: "Browse Companies",
   },
   products: {
     featured: [
       {
-        name: "DoubleText",
-        medium: "React · GraphQL · Golang",
-        summary: "The #1 Facebook Messenger analyzer.",
+        name: "Next Bolt",
+        medium: "Green Energy · Batteries · Infrastructure",
+        summary: "The Future of Home Batteries.",
         copy: [
-          "See millions of messages at a glance, without data leaving your computer."
-        ],
-        links: {
-          color: "#363636",
-          primary: {
-            name: "Discover",
-            url: "https://doubletext.me/"
-          }
-        },
-        images: [
-          "/doubletext/0.jpg",
-          "/doubletext/1.jpg",
-          "/doubletext/2.jpg",
-          "/doubletext/3.jpg",
-          "/doubletext/4.jpg"
-        ]
-      },
-      {
-        name: "ClimbList",
-        medium: "React · Next.js",
-        summary: "Construction is now in progress.",
-        copy: [
-          "Compare and track grades and pricing between gyms around the country.",
+          "Next Bolt is a home battery that powers during the day and charges at night, saving you money reduces emissions.",
         ],
         links: {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://climblist.com/"
+            url: "https://nextbolt.co"
           }
         },
         images: [
-          "/climblist/0.jpg",
-          "/climblist/1.jpg",
+          "/companies/next-bolt/0.jpeg",
+          "/companies/next-bolt/1.jpeg",
+          "/companies/next-bolt/2.jpeg",
         ]
-      }
+      },
+      {
+        name: "SolarGaps",
+        // medium: "Green Energy · Smart Cities · Social Impact",
+        summary: "World's First Smart Solar Blinds.",
+        copy: [
+          "SolarGaps smart blinds track the sun and generate electricity from its energy. Reducing your energy bill and carbon footprint."
+        ],
+        links: {
+          color: "#363636",
+          primary: {
+            name: "Learn more",
+            url: "https://solargaps.com"
+          }
+        },
+        images: [
+          "/companies/solargaps/0.jpeg",
+          "/companies/solargaps/1.jpeg",
+          "/companies/solargaps/2.jpeg",
+          "/companies/solargaps/3.jpeg",
+        ]
+      },
+      {
+        name: "NowRx",
+        medium: "Healthcare · Pharmacy · Robotics",
+        summary: "Free Same Day Prescription Delivery.",
+        copy: [
+          "NowRx is a digital health platform that provides same day pharmacy delivery and telehealth services.",
+        ],
+        links: {
+          color: "#363636",
+          primary: {
+            name: "Learn more",
+            url: "https://nowrx.com"
+          }
+        },
+        images: [
+          "/companies/nowrx/0.jpeg",
+          "/companies/nowrx/1.jpeg",
+          "/companies/nowrx/2.jpeg",
+        ]
+      },
+      {
+        name: "RAD AI",
+        medium: "AI · B2B · Software",
+        summary: "Marketing AI Platform with an EQ.",
+        copy: [
+          "We blend the magic of storytelling -- with a mastery of AI -- to create authentic influencer marketing programs.",
+        ],
+        links: {
+          color: "#363636",
+          primary: {
+            name: "Learn more",
+            url: "https://www.radintel.ai/"
+          }
+        },
+        images: [
+          "/companies/rad-ai/0.jpeg",
+          "/companies/rad-ai/1.jpeg",
+          "/companies/rad-ai/2.jpeg",
+        ]
+      },
+      {
+        name: "Musiversal",
+        medium: "Music · B2C · Software",
+        summary: "World's First Remote Recording Studio.",
+        copy: [
+          "Record your songs in real time with 1:1 professional session musicians and sound engineers.",
+        ],
+        links: {
+          color: "#363636",
+          primary: {
+            name: "Learn more",
+            url: "https://musiversal.com"
+          }
+        },
+        images: [
+          "/companies/musiversal/0.jpeg",
+          "/companies/musiversal/1.jpeg",
+        ]
+      },
     ],
     // Only supports 0-3 at the moment
     minor: [
       {
-        name: "Volunteer Portal",
-        description: "Find and track volunteer opportunities.",
+        name: "Jr.DevJobs",
+        description: "Jobs for junior software developers.",
         link: {
-          name: "Github",
-          url: "https://github.com/zendesk/volunteer_portal"
+          name: "Visit",
+          url: "https://www.jrdevjobs.com"
         }
       },
       {
-        name: "Final Slash VR",
-        description: "Short survival experience on an abandoned planet.",
+        name: "MonthlyStash",
+        description: "Delivering CBD to the world.",
         link: {
-          name: "Download",
-          url: "https://samzx.itch.io/final-slash-vr"
+          name: "Visit",
+          url: "https://www.monthlystash.com"
         }
       },
       {
-        name: "MPH Watch",
-        description: "Stats for miners mining on Mining Pool Hub.",
+        name: "Coming soon...",
+        description: "Your company could be here!",
         link: {
-          name: "Demo",
-          url: "https://mphwatch.samxie.net/demo"
+          name: "Contact us",
+          url: "mailto://contact@meyervisions.com"
         }
       }
     ]
   },
+  // Only supports 0-3 at the moment
   logoSection: {
     title: "As hired by",
-    // Only supports 0-3 at the moment
     logos: [
       {
         src: "/logos/unimelb.svg",
@@ -96,10 +155,10 @@ export default {
         url: "https://cash.app/",
         alt: "Cash App"
       }
-  ]
+    ]
   },
   footer: {
-    tagline: "Sam Xie — Melbourne, Australia",
+    tagline: "Meyer Visions · Jacksonville, FL, USA",
     links: [
       {
         name: "Twitter",
