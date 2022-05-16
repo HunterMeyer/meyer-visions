@@ -1,11 +1,11 @@
 export default {
   author: "Meyer Visions",
   hero: {
-    // subtitle: "Seeing the future, today.",
-    description: "Meyer Visions is a venture capital firm that invests early in founders building fast-growing technology companies. We focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.",
+    subtitle: "Funding the Future.",
+    description: "Meyer Visions is a venture capital firm that invests early in founders building fast-growing technology companies.",
     cta: "Browse Companies",
   },
-  products: {
+  companies: {
     featured: [
       {
         name: "Next Bolt",
@@ -131,60 +131,53 @@ export default {
         description: "Your company could be here!",
         link: {
           name: "Contact us",
-          url: "mailto://contact@meyervisions.com"
+          url: "mailto:contact@meyervisions.com"
         }
       }
     ]
   },
   // Only supports 0-3 at the moment
-  logoSection: {
-    title: "As hired by",
-    logos: [
+  peopleSection: {
+    title: "Founders",
+    people: [
       {
-        src: "/logos/unimelb.svg",
-        url: "https://unimelb.edu.au/",
-        alt: "Unimelb"
+        name: "Hunter Meyer",
+        url: "https://www.linkedin.com/in/hrmeyer"
       },
       {
-        src: "/logos/zendesk.svg",
-        url: "https://www.zendesk.com/",
-        alt: "Zendesk"
+        name: "Megan Murphy",
+        url: "https://www.linkedin.com/in/megandmurphy/"
       },
-      {
-        src: "/logos/cashapp.svg",
-        url: "https://cash.app/",
-        alt: "Cash App"
-      }
     ]
   },
   footer: {
-    tagline: "Meyer Visions · Jacksonville, FL, USA",
-    links: [
-      {
-        name: "Twitter",
-        url: "https://twitter.com/samxstudio",
-        fa: "fab fa-twitter" // Code from: https://fontawesome.com/v5/icons/twitter?s=brands
-      },
-      {
-        name: "Medium",
-        url: "https://medium.com/@samxie",
-        fa: "fab fa-medium"
-      },
-      {
-        name: "Github",
-        url: "https://github.com/samzx",
-        fa: "fab fa-github"
-      },
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/xiesam/",
-        fa: "fab fa-linkedin"
-      },
-      {
-        name: "Email",
-        url: "mailto:contact@samxie.net",
-        fa: "fa fa-envelope"
-      },
-    ]
+    tagline: "Meyer Visions · Funding the Future",
+    // links: [
+    //   {
+    //     name: "Twitter",
+    //     url: "https://twitter.com/samxstudio",
+    //     fa: "fab fa-twitter" // Code from: https://fontawesome.com/v5/icons/twitter?s=brands
+    //   },
+    //   {
+    //     name: "Medium",
+    //     url: "https://medium.com/@samxie",
+    //     fa: "fab fa-medium"
+    //   },
+    //   {
+    //     name: "Github",
+    //     url: "https://github.com/samzx",
+    //     fa: "fab fa-github"
+    //   },
+    //   {
+    //     name: "Linkedin",
+    //     url: "https://www.linkedin.com/in/xiesam/",
+    //     fa: "fab fa-linkedin"
+    //   },
+    //   {
+    //     name: "Email",
+    //     url: "mailto:contact@samxie.net",
+    //     fa: "fa fa-envelope"
+    //   },
+    // ]
   }
 }

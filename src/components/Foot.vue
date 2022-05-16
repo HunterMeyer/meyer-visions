@@ -31,7 +31,7 @@ const AppFooter = styled.div`
 `
 
 const Author = styled.p`
-  margin-right: 36px;
+  text-align: center;
 `
 
 const Icons = styled.a`

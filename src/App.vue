@@ -6,9 +6,9 @@
       v-bind:description="hero.description"
       v-bind:cta="hero.cta"
     />
-    <card-container id="products">
+    <card-container id="companies">
       <card
-        v-for="(product, index) in products.featured" :key="index"
+        v-for="(product, index) in companies.featured" :key="index"
         v-bind:name="product.name"
         v-bind:medium="product.medium"
         v-bind:summary="product.summary"
@@ -18,23 +18,22 @@
       />
       <minor-card-container>
         <minor-card
-          v-for="(product, index) in products.minor && products.minor.slice(0,3)" :key="index"
+          v-for="(product, index) in companies.minor && companies.minor.slice(0,3)" :key="index"
           v-bind:name="product.name"
           v-bind:description="product.description"
           v-bind:link="product.link"
         />
       </minor-card-container>
-      <logo-section-container>
-        <main-title>{{logoSection.title}}</main-title>
-        <logo-container>
-          <logo-card
-            v-for="(logo, index) in logoSection.logos && logoSection.logos.slice(0,3)" :key="index"
-            v-bind:src="logo.src"
-            v-bind:url="logo.url"
-            v-bind:alt="logo.alt"
+      <person-section-container>
+        <main-title>{{peopleSection.title}}</main-title>
+        <person-container>
+          <person-card
+            v-for="(person, index) in peopleSection.people && peopleSection.people.slice(0,3)" :key="index"
+            v-bind:url="person.url"
+            v-bind:name="person.name"
           />
-        </logo-container>
-      </logo-section-container>
+        </person-container>
+      </person-section-container>
     </card-container>
     <foot v-bind:author="author" v-bind:footer="footer" />
     <light-toggle v-on:click="toggleTheme()"><span v-if="!isDark" >💡</span><span v-if="isDark">💡</span></light-toggle>
@@ -47,7 +46,7 @@ import styled from 'vue-styled-components'
 import Hero from './components/Hero.vue'
 import Card from './components/Card.vue'
 import MinorCard from './components/MinorCard.vue'
-import LogoCard from './components/LogoCard.vue'
+import PersonCard from './components/PersonCard.vue'
 import Foot from './components/Foot.vue'
 import { ThemeProvider, injectGlobal } from 'vue-styled-components'
 
@@ -196,7 +195,7 @@ const MinorCardContainer = styled.div`
   }
 `
 
-const LogoSectionContainer = styled.div`
+const PersonSectionContainer = styled.div`
   margin:auto;
   text-align: center;
   width: ${({theme}) => theme.screen.width.desktop}px;
@@ -210,7 +209,7 @@ const LogoSectionContainer = styled.div`
   }
 `
 
-const LogoContainer = styled.div`
+const PersonContainer = styled.div`
   justify-content: center;
   margin:auto;
   margin-top: 20px;
@@ -258,9 +257,9 @@ export default {
     CardContainer,
     LightToggle,
     MainTitle,
-    LogoContainer,
-    LogoSectionContainer,
-    LogoCard
+    PersonContainer,
+    PersonSectionContainer,
+    PersonCard
   },
   computed: {
     theme() {

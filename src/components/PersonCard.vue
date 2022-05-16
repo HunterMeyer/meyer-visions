@@ -1,7 +1,7 @@
 <template>
-  <styled-a v-bind:href="url" target="_blank" v-bind:aria-label="alt">
+  <styled-a v-bind:href="url" target="_blank" v-bind:aria-label="name">
     <card>
-        <logo v-bind:src="src" v-bind:alt="alt"></logo>
+      <person-name>{{name}}</person-name>
     </card>
   </styled-a>
 </template>
@@ -20,7 +20,6 @@ const StyledA = styled.a`
 `
 
 const Card = styled.div`
-  height: 2rem;
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -49,23 +48,22 @@ const Card = styled.div`
   }
 `
 
-const Logo = styled.img`
-  height: 100%;
-  mix-blend-mode: exclusion;
-  filter: invert(1);
-  opacity: 0.8;
+const PersonName = styled.h1`
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 0.5px;
 `
+
 
 export default {
   components: {
     Card,
-    Logo,
-    StyledA
+    StyledA,
+    PersonName
   },
   props: {
-    src: String,
     url: String,
-    alt: String
+    name: String
   }
 }
 </script>
