@@ -36,7 +36,14 @@
       </person-section-container>
     </card-container>
     <foot v-bind:author="author" v-bind:footer="footer" />
-    <light-toggle v-on:click="toggleTheme()"><span v-if="!isDark" >💡</span><span v-if="isDark">💡</span></light-toggle>
+    <light-toggle v-on:click="toggleTheme()">
+      <span v-if="!isDark" >
+        <i class="fas fa-moon"></i>
+      </span>
+      <span v-if="isDark">
+        <i class="fas fa-sun" style="color:#fff;"></i>
+      </span>
+    </light-toggle>
   </theme-provider>
 </template>
 
@@ -239,10 +246,6 @@ const LightToggle = styled.button`
   transform: translateY(0px);
   transition: 0.3s transform ease-out;
   cursor: pointer;
-  &:hover {
-    transform: translateY(-5px);
-    transition: 0.2s transform ease-out;
-  }
 `
 
 export default {
