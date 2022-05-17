@@ -29,7 +29,7 @@ export default {
       },
       {
         name: "SolarGaps",
-        // medium: "Green Energy · Smart Cities · Social Impact",
+        medium: "Green Energy · Smart Cities · Social Impact",
         summary: "World's First Smart Solar Blinds.",
         copy: [
           "SolarGaps smart blinds track the sun and generate electricity from its energy. Reducing your energy bill and carbon footprint."
@@ -91,9 +91,9 @@ export default {
       {
         name: "Musiversal",
         medium: "Music · B2C · Software",
-        summary: "World's First Remote Recording Studio.",
+        summary: "Remote Recording Studio.",
         copy: [
-          "Record your songs in real time with 1:1 professional session musicians and sound engineers.",
+          "Record your songs in real time with 1:1 professional musicians and sound engineers.",
         ],
         links: {
           color: "#363636",

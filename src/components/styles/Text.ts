@@ -33,7 +33,7 @@ export const Paragraph = styled.p`
 `
 
 export const Subtitle = styled(Paragraph)`
-  font-weight: 400;
+  font-weight: 600;
 `
 
 export const ButtonText = styled.span`
