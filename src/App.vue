@@ -33,7 +33,7 @@
     <foot v-bind:author="author" v-bind:footer="footer" />
     <light-toggle v-on:click="toggleTheme()">
       <span v-if="!isDark" >
-        <i class="fas fa-moon"></i>
+        <i class="fas fa-moon" style="color:#000;"></i>
       </span>
       <span v-if="isDark">
         <i class="fas fa-sun" style="color:#fff;"></i>
