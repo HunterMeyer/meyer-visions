@@ -5,6 +5,20 @@ export default {
     description: "Meyer Visions is a venture capital firm that invests early in founders building fast-growing technology companies.",
     cta: "Browse Companies",
   },
+  quote: {
+    text: "Our mission is to launch the innovators building companies who share our vision of creating a sustainable, equitable, and rewarding future.",
+    authors: [
+      {
+        name: "Hunter Meyer",
+        url: "https://www.linkedin.com/in/HRMeyer"
+      },
+      {
+        name: "Megan Murphy",
+        url: "https://www.linkedin.com/in/megandmurphy/"
+      }
+    ],
+    authorTitle: "Founders"
+  },
   companies: {
     featured: [
       {
@@ -134,20 +148,6 @@ export default {
           url: "mailto:contact@meyervisions.com"
         }
       }
-    ]
-  },
-  // Only supports 0-3 at the moment
-  peopleSection: {
-    title: "Founders",
-    people: [
-      {
-        name: "Hunter Meyer",
-        url: "https://www.linkedin.com/in/hrmeyer"
-      },
-      {
-        name: "Megan Murphy",
-        url: "https://www.linkedin.com/in/megandmurphy/"
-      },
     ]
   },
   footer: {

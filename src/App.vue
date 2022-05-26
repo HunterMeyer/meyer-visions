@@ -24,17 +24,12 @@
           v-bind:link="product.link"
         />
       </minor-card-container>
-      <person-section-container>
-        <main-title>{{peopleSection.title}}</main-title>
-        <person-container>
-          <person-card
-            v-for="(person, index) in peopleSection.people && peopleSection.people.slice(0,3)" :key="index"
-            v-bind:url="person.url"
-            v-bind:name="person.name"
-          />
-        </person-container>
-      </person-section-container>
     </card-container>
+    <quote
+      v-bind:quote="quote.text"
+      v-bind:authors="quote.authors"
+      v-bind:authorTitle="quote.authorTitle"
+    />
     <foot v-bind:author="author" v-bind:footer="footer" />
     <light-toggle v-on:click="toggleTheme()">
       <span v-if="!isDark" >
@@ -53,11 +48,10 @@ import styled from 'vue-styled-components'
 import Hero from './components/Hero.vue'
 import Card from './components/Card.vue'
 import MinorCard from './components/MinorCard.vue'
-import PersonCard from './components/PersonCard.vue'
+import Quote from './components/Quote.vue'
 import Foot from './components/Foot.vue'
 import { ThemeProvider, injectGlobal } from 'vue-styled-components'
 
-import { MainTitle } from './components/styles/Text.ts'
 import baseData from './data/fixtures.ts'
 import light from './themes/light.ts'
 import dark from './themes/dark.ts'
@@ -120,24 +114,8 @@ const setup = () => {
 }
 
 injectGlobal`
-  @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 400;
-    src: url("/fonts/SFProDisplay-Regular.ttf");
-  }
-  @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 700;
-    src: url("/fonts/SFProDisplay-Bold.ttf");
-  }
-  @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 300;
-    src: url("/fonts/SFProDisplay-Light.ttf");
-  }
-
   html {
-    font-family: 'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 18px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -199,37 +177,6 @@ const MinorCardContainer = styled.div`
       margin: 16px 0px;
     }
   }
-  }
-`
-
-const PersonSectionContainer = styled.div`
-  margin:auto;
-  text-align: center;
-  width: ${({theme}) => theme.screen.width.desktop}px;
-  @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
-    width: ${({theme}) => theme.screen.width.tablet}px;
-    flex-direction: column;
-  }
-  @media screen and (max-width: ${({theme}) => theme.screen.width.tablet}px) {
-    width: ${({theme}) => theme.screen.width.mobile}px;
-    flex-direction: column;
-  }
-`
-
-const PersonContainer = styled.div`
-  justify-content: center;
-  margin:auto;
-  margin-top: 20px;
-  width: ${({theme}) => theme.screen.width.desktop}px;
-  display: flex;
-  @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
-    width: ${({theme}) => theme.screen.width.tablet}px;
-    flex-direction: column;
-  }
-  @media screen and (max-width: ${({theme}) => theme.screen.width.tablet}px) {
-    width: ${({theme}) => theme.screen.width.mobile}px;
-    flex-direction: column;
-  }
 `
 
 const LightToggle = styled.button`
@@ -259,10 +206,7 @@ export default {
     ThemeProvider,
     CardContainer,
     LightToggle,
-    MainTitle,
-    PersonContainer,
-    PersonSectionContainer,
-    PersonCard
+    Quote,
   },
   computed: {
     theme() {
