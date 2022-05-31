@@ -1,37 +1,39 @@
 <template>
   <theme-provider :theme="theme">
     <hero
-      v-bind:author="author"
-      v-bind:subtitle="hero.subtitle"
-      v-bind:description="hero.description"
-      v-bind:cta="hero.cta"
+      :author="author"
+      :subtitle="hero.subtitle"
+      :description="hero.description"
+      :cta="hero.cta"
     />
     <card-container id="companies">
       <card
-        v-for="(product, index) in companies.featured" :key="index"
-        v-bind:name="product.name"
-        v-bind:medium="product.medium"
-        v-bind:summary="product.summary"
-        v-bind:copy="product.copy"
-        v-bind:links="product.links"
-        v-bind:images="product.images"
+        v-for="(product, index) in companies.featured"
+        :key="index"
+        :name="product.name"
+        :medium="product.medium"
+        :summary="product.summary"
+        :copy="product.copy"
+        :links="product.links"
+        :images="product.images"
       />
       <minor-card-container>
         <minor-card
-          v-for="(product, index) in companies.minor && companies.minor.slice(0,3)" :key="index"
-          v-bind:name="product.name"
-          v-bind:description="product.description"
-          v-bind:link="product.link"
+          v-for="(product, index) in companies.minor && companies.minor.slice(0,3)"
+          :key="index"
+          :name="product.name"
+          :description="product.description"
+          :link="product.link"
         />
       </minor-card-container>
     </card-container>
     <quote
-      v-bind:quote="quote.text"
-      v-bind:authors="quote.authors"
-      v-bind:authorTitle="quote.authorTitle"
+      :quote="quote.text"
+      :authors="quote.authors"
+      :authorTitle="quote.authorTitle"
     />
-    <foot v-bind:author="author" v-bind:footer="footer" />
-    <light-toggle v-on:click="toggleTheme()">
+    <foot :footer="footer" />
+    <light-toggle @click="toggleTheme()" title="Toggle theme">
       <span v-if="!isDark" >
         <i class="fas fa-moon" style="color:#000;"></i>
       </span>

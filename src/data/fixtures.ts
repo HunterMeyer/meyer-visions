@@ -32,7 +32,8 @@ export default {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://nextbolt.co"
+            url: "https://nextbolt.co",
+            title: "Open Next Bolt website"
           }
         },
         images: [
@@ -52,7 +53,8 @@ export default {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://solargaps.com"
+            url: "https://solargaps.com",
+            title: "Open SolarGaps website"
           }
         },
         images: [
@@ -73,7 +75,8 @@ export default {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://nowrx.com"
+            url: "https://nowrx.com",
+            title: "Open NowRx website"
           }
         },
         images: [
@@ -93,7 +96,8 @@ export default {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://www.radintel.ai/"
+            url: "https://www.radintel.ai/",
+            title: "Open RAD AI website"
           }
         },
         images: [
@@ -113,7 +117,8 @@ export default {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://musiversal.com"
+            url: "https://musiversal.com",
+            title: "Open Musiversal website"
           }
         },
         images: [
@@ -129,7 +134,8 @@ export default {
         description: "Jobs for junior software developers.",
         link: {
           name: "Visit",
-          url: "https://www.jrdevjobs.com"
+          url: "https://www.jrdevjobs.com",
+          title: "Open Jr.DevJobs website"
         }
       },
       {
@@ -137,7 +143,8 @@ export default {
         description: "Delivering CBD to the world.",
         link: {
           name: "Visit",
-          url: "https://www.monthlystash.com"
+          url: "https://www.monthlystash.com",
+          title: "Open MonthlyStash website"
         }
       },
       {
@@ -145,39 +152,30 @@ export default {
         description: "Your company could be here!",
         link: {
           name: "Contact us",
-          url: "mailto:contact@meyervisions.com"
+          url: "mailto:contact@meyervisions.com",
+          title: "Contact us via email"
         }
       }
     ]
   },
   footer: {
     tagline: "Meyer Visions · Funding the Future",
-    // links: [
-    //   {
-    //     name: "Twitter",
-    //     url: "https://twitter.com/samxstudio",
-    //     fa: "fab fa-twitter" // Code from: https://fontawesome.com/v5/icons/twitter?s=brands
-    //   },
-    //   {
-    //     name: "Medium",
-    //     url: "https://medium.com/@samxie",
-    //     fa: "fab fa-medium"
-    //   },
-    //   {
-    //     name: "Github",
-    //     url: "https://github.com/samzx",
-    //     fa: "fab fa-github"
-    //   },
-    //   {
-    //     name: "Linkedin",
-    //     url: "https://www.linkedin.com/in/xiesam/",
-    //     fa: "fab fa-linkedin"
-    //   },
-    //   {
-    //     name: "Email",
-    //     url: "mailto:contact@samxie.net",
-    //     fa: "fa fa-envelope"
-    //   },
-    // ]
+    links: [
+      {
+        title: "Meyer Visions on Twitter",
+        url: "https://twitter.com/MeyerVisions",
+        fa: "fab fa-twitter"
+      },
+      {
+        title: "Meyer Visions on Facebook",
+        url: "https://facebook.com/MeyerVisions",
+        fa: "fab fa-facebook"
+      },
+      {
+        title: "Meyer Visions on LinkedIn",
+        url: "https://www.linkedin.com/company/MeyerVisions/",
+        fa: "fab fa-linkedin"
+      }
+    ]
   }
 }

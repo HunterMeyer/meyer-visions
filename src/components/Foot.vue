@@ -4,7 +4,15 @@
       <author>{{footer.tagline}}</author>
     </div>
     <icon-container>
-      <icons v-for="(link, index) in footer.links" :key="`product-desctiption-${index}`" v-bind:href="link.url" target="_blank"><i v-bind:class="link.fa"></i></icons>
+      <icons
+        v-for="(link, index) in footer.links"
+        :key="`footer-links-${index}`"
+        :href="link.url"
+        :title="link.title"
+        target="_blank"
+      >
+        <i :class="link.fa"></i>
+      </icons>
     </icon-container>
   </app-footer>
 </template>
@@ -36,21 +44,21 @@ const Author = styled.p`
 
 const Icons = styled.a`
   padding: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
   color: ${({theme}) => theme.color.text};
   opacity: 0.5;
   transform: translateY(0px);
   transition: 0.3s all ease-out;
 
   &:hover {
-    transform: translateY(-2px);
     transition: 0.2s all ease-out;
     opacity: 1;
-    /* color: ${({theme}) => theme.color.link}; */
   }
 `
 const IconContainer = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default {

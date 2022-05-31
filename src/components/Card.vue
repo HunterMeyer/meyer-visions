@@ -8,7 +8,10 @@
           <carousel-container v-if="windowWidth <= 980">
             <styled-carousel v-if="images" :perPage="1">
               <slide v-for="(image, index) in images" :key="index">
-                <carousel-image loading="lazy" v-bind:src="image"/>
+                <carousel-image
+                  loading="lazy"
+                  :src="image"
+                  :alt="`${name} image ${index}`" />
               </slide>
             </styled-carousel>
           </carousel-container>
@@ -20,22 +23,33 @@
             v-if="links.primary"
             primary
             :color="links.color"
-            v-bind:href="links.primary.url"
+            :href="links.primary.url"
+            :title="links.primary.title"
             target="_blank"
-          ><button-text>{{links.primary.name}}</button-text><i class="fas fa-arrow-right"></i></styled-button>
+          >
+            <button-text>{{links.primary.name}}</button-text>
+            <i class="fas fa-arrow-right"></i>
+          </styled-button>
           <styled-button
             v-if="links.secondary"
             secondary
             :color="links.color"
-            v-bind:href="links.secondary.url"
+            :href="links.secondary.url"
+            :title="links.secondary.title"
             target="_blank"
-          ><button-text>{{links.secondary.name}}</button-text><i class="fas fa-arrow-right"></i></styled-button>
+          >
+            <button-text>{{links.secondary.name}}</button-text>
+            <i class="fas fa-arrow-right"></i>
+          </styled-button>
         </button-container>
       </left-container>
       <carousel-container v-if="windowWidth > 980">
         <styled-carousel v-if="images" :perPage="1">
           <slide v-for="(image, index) in images" :key="index">
-            <carousel-image loading="lazy" v-bind:src="image"/>
+            <carousel-image
+              loading="lazy"
+              :src="image"
+              :alt="`${name} image ${index}`" />
           </slide>
         </styled-carousel>
       </carousel-container>

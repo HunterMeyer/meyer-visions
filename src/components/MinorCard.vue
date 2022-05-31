@@ -5,7 +5,14 @@
       <paragraph>{{description}}</paragraph>
     </contents>
     <div>
-      <styled-button v-bind:href="link.url" target="_blank" ><button-text>{{link.name}}</button-text><i class="fas fa-arrow-right"></i></styled-button>
+      <styled-button
+        :href="link.url"
+        :title="link.title"
+        target="_blank"
+      >
+        <button-text>{{link.name}}</button-text>
+        <i class="fas fa-arrow-right"></i>
+      </styled-button>
     </div>
   </card>
 </template>

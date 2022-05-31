@@ -3,7 +3,11 @@
     <quote-body>"{{quote}}"</quote-body>
     <authors>
       <author v-for="(author, index) in authors" :key="index">
-        <a v-bind:href="author.url" target="_blank">
+        <a
+          :href="author.url"
+          :title="`Open ${author.name} website`"
+          target="_blank"
+        >
           {{author.name}}
         </a>
       </author>
