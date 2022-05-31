@@ -36,9 +36,9 @@ export default {
           }
         },
         images: [
-          "/companies/next-bolt/0.jpeg",
-          "/companies/next-bolt/1.jpeg",
-          "/companies/next-bolt/2.jpeg",
+          "/companies/next-bolt/0.webp",
+          "/companies/next-bolt/1.webp",
+          "/companies/next-bolt/2.webp",
         ]
       },
       {
@@ -56,10 +56,10 @@ export default {
           }
         },
         images: [
-          "/companies/solargaps/0.jpeg",
-          "/companies/solargaps/1.jpeg",
-          "/companies/solargaps/2.jpeg",
-          "/companies/solargaps/3.jpeg",
+          "/companies/solargaps/0.webp",
+          "/companies/solargaps/1.webp",
+          "/companies/solargaps/2.webp",
+          "/companies/solargaps/3.webp",
         ]
       },
       {
@@ -77,9 +77,9 @@ export default {
           }
         },
         images: [
-          "/companies/nowrx/0.jpeg",
-          "/companies/nowrx/1.jpeg",
-          "/companies/nowrx/2.jpeg",
+          "/companies/nowrx/0.webp",
+          "/companies/nowrx/1.webp",
+          "/companies/nowrx/2.webp",
         ]
       },
       {
@@ -97,9 +97,9 @@ export default {
           }
         },
         images: [
-          "/companies/rad-ai/0.jpeg",
-          "/companies/rad-ai/1.jpeg",
-          "/companies/rad-ai/2.jpeg",
+          "/companies/rad-ai/0.webp",
+          "/companies/rad-ai/1.webp",
+          "/companies/rad-ai/2.webp",
         ]
       },
       {
@@ -117,8 +117,8 @@ export default {
           }
         },
         images: [
-          "/companies/musiversal/0.jpeg",
-          "/companies/musiversal/1.jpeg",
+          "/companies/musiversal/0.webp",
+          "/companies/musiversal/1.webp",
         ]
       },
     ],
