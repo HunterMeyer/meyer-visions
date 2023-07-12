@@ -22,6 +22,26 @@ export default {
   companies: {
     featured: [
       {
+        name: "Backspace",
+        medium: "Social · Community · Creative",
+        summary: "Build, Connect, and Moneitze Communities.",
+        copy: [
+          "The social community platform that prioritizes creators connection to their fans.",
+        ],
+        links: {
+          color: "#363636",
+          primary: {
+            name: "Learn more",
+            url: "https://backspacethat.com",
+            title: "Open Backspace website"
+          }
+        },
+        images: [
+          "/companies/backspace/0.webp",
+          "/companies/backspace/1.webp"
+        ]
+      },
+      {
         name: "Next Bolt",
         medium: "Green Energy · Batteries · Infrastructure",
         summary: "The Future of Home Batteries.",
@@ -32,7 +52,7 @@ export default {
           color: "#363636",
           primary: {
             name: "Learn more",
-            url: "https://nextbolt.co",
+            url: "https://nextthing.tech/",
             title: "Open Next Bolt website"
           }
         },
@@ -62,27 +82,6 @@ export default {
           "/companies/solargaps/1.webp",
           "/companies/solargaps/2.webp",
           "/companies/solargaps/3.webp",
-        ]
-      },
-      {
-        name: "NowRx",
-        medium: "Healthcare · Pharmacy · Robotics",
-        summary: "Free Same Day Prescription Delivery.",
-        copy: [
-          "NowRx is a digital health platform that provides same day pharmacy delivery and telehealth services.",
-        ],
-        links: {
-          color: "#363636",
-          primary: {
-            name: "Learn more",
-            url: "https://nowrx.com",
-            title: "Open NowRx website"
-          }
-        },
-        images: [
-          "/companies/nowrx/0.webp",
-          "/companies/nowrx/1.webp",
-          "/companies/nowrx/2.webp",
         ]
       },
       {
