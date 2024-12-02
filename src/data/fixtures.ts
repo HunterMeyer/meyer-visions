@@ -22,6 +22,21 @@ export default {
   companies: {
     featured: [
       {
+        name: "UpSchool",
+        medium: "Education · Gig-Economy",
+        summary: "Homeschool Curriculum Marketplace.",
+        copy: [
+          "Marketplace to find and sell certified homeschool courses and curriculum.",
+        ],
+        links: {
+          color: "#363636",
+        },
+        images: [
+          "/companies/up-school/0.webp",
+          "/companies/up-school/1.webp"
+        ]
+      },
+      {
         name: "Backspace",
         medium: "Social · Community · Creative",
         summary: "Build, Connect, and Moneitze Communities.",
