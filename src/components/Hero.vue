@@ -13,7 +13,7 @@
             :title="cta"
           >
             <button-text>{{cta}}</button-text>
-            <i class="fas fa-arrow-down"></i>
+            <i class="fa-solid fa-arrow-down"></i>
           </styled-button>
         </cta-section>
       </text-container>

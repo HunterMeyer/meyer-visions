@@ -11,7 +11,7 @@
         target="_blank"
       >
         <button-text>{{link.name}}</button-text>
-        <i class="fas fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-right"></i>
       </styled-button>
     </div>
   </card>

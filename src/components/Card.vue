@@ -28,7 +28,7 @@
             target="_blank"
           >
             <button-text>{{links.primary.name}}</button-text>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
           </styled-button>
           <styled-button
             v-if="links.secondary"
@@ -39,7 +39,7 @@
             target="_blank"
           >
             <button-text>{{links.secondary.name}}</button-text>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
           </styled-button>
         </button-container>
       </left-container>

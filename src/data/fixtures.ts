@@ -176,19 +176,19 @@ export default {
     tagline: "Meyer Visions · Funding the Future",
     links: [
       {
-        title: "Meyer Visions on Twitter",
-        url: "https://twitter.com/MeyerVisions",
-        fa: "fab fa-twitter"
+        title: "Meyer Visions on X",
+        url: "https://x.com/MeyerVisions",
+        fa: "fa-brands fa-x-twitter"
       },
       {
         title: "Meyer Visions on Facebook",
         url: "https://facebook.com/MeyerVisions",
-        fa: "fab fa-facebook"
+        fa: "fa-brands fa-facebook"
       },
       {
         title: "Meyer Visions on LinkedIn",
         url: "https://www.linkedin.com/company/MeyerVisions/",
-        fa: "fab fa-linkedin"
+        fa: "fa-brands fa-linkedin"
       }
     ]
   }

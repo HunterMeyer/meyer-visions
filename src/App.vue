@@ -35,10 +35,10 @@
     <foot :footer="footer" />
     <light-toggle @click="toggleTheme()" title="Toggle theme">
       <span v-if="!isDark" >
-        <i class="fas fa-moon" style="color:#000;"></i>
+        <i class="fa-solid fa-moon" style="color:#000;"></i>
       </span>
       <span v-if="isDark">
-        <i class="fas fa-sun" style="color:#fff;"></i>
+        <i class="fa-solid fa-sun" style="color:#fff;"></i>
       </span>
     </light-toggle>
   </theme-provider>
