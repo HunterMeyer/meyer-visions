@@ -8,20 +8,20 @@ Push your changes to master to auto-deploy to vercel.
 
 ## Development
 ```
-yarn install
+bun install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn start
+bun start
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+bun run build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+bun run lint
 ```
