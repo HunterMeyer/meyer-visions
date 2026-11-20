@@ -6,7 +6,7 @@ export default {
     cta: "Browse Companies",
   },
   quote: {
-    text: "Our mission is to launch the innovators building companies who share our vision of creating a sustainable, equitable, and rewarding future.",
+    text: "Our mission is to launch the innovators building companies that share our vision of creating a sustainable, equitable, and rewarding future.",
     authors: [
       {
         name: "Hunter Meyer",
@@ -39,9 +39,9 @@ export default {
       {
         name: "Backspace",
         medium: "Social · Community · Creative",
-        summary: "Build, Connect, and Moneitze Communities.",
+        summary: "Build, Connect, and Monetize Communities.",
         copy: [
-          "The social community platform that prioritizes creators connection to their fans.",
+          "The social community platform that prioritizes creators' connection to their fans.",
         ],
         links: {
           color: "#363636",
@@ -61,7 +61,7 @@ export default {
         medium: "Green Energy · Batteries · Infrastructure",
         summary: "The Future of Home Batteries.",
         copy: [
-          "Next Bolt is a home battery that powers during the day and charges at night, saving you money reduces emissions.",
+          "Next Bolt is a home battery that powers during the day and charges at night, saving you money and reduces emissions.",
         ],
         links: {
           color: "#363636",
@@ -104,7 +104,7 @@ export default {
         medium: "AI · B2B · Software",
         summary: "Marketing AI Platform with an EQ.",
         copy: [
-          "We blend the magic of storytelling -- with a mastery of AI -- to create authentic influencer marketing programs.",
+          "We blend the magic of storytelling, with a mastery of AI, to create authentic influencer marketing programs.",
         ],
         links: {
           color: "#363636",
