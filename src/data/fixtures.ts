@@ -13,7 +13,7 @@ export default {
         url: "https://www.linkedin.com/in/HRMeyer"
       },
       {
-        name: "Megan Murphy",
+        name: "Megan Meyer",
         url: "https://www.linkedin.com/in/megandmurphy/"
       }
     ],
