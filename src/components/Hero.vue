@@ -8,7 +8,7 @@
         <cta-section>
           <styled-button
             secondary
-            :color="'#363636'"
+            :color="'#0670c8'"
             :href="'/#companies'"
             :title="cta"
           >
@@ -40,6 +40,7 @@ const Background = styled.div`
   min-height: 600px;
   max-height: 1035px;
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
+    background-image: linear-gradient(${({theme}) => theme.hero.background.overlay}, ${({theme}) => theme.hero.background.overlay}), url(${({theme}) => theme.hero.background.image});
     background-position: 60% -45px;
     background-size: inherit;
 }
@@ -68,7 +69,8 @@ const TextContainer = styled.div`
   margin-top: -20px;
 
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
-    width: ${({theme}) => theme.screen.width.mobile - theme.screen.padding.mobile * 2}px;
+    width: calc(100% - 40px);
+    max-width: 560px;
     margin: auto;
   }
 `
@@ -83,7 +85,7 @@ const Heading = styled.h1`
 `
 
 const CtaSection = styled.div`
-  margin: 36px 0px;
+  margin: 36px 0px 72px;
 `
 
 export default {

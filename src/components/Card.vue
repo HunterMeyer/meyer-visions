@@ -25,7 +25,7 @@
             :color="links.color"
             :href="links.primary.url"
             :title="links.primary.title"
-            target="_blank"
+            :target="links.primary.target || '_blank'"
           >
             <button-text>{{links.primary.name}}</button-text>
             <i class="fa-solid fa-arrow-right"></i>
@@ -36,7 +36,7 @@
             :color="links.color"
             :href="links.secondary.url"
             :title="links.secondary.title"
-            target="_blank"
+            :target="links.secondary.target || '_blank'"
           >
             <button-text>{{links.secondary.name}}</button-text>
             <i class="fa-solid fa-arrow-right"></i>
@@ -76,7 +76,8 @@ const Card = styled.div`
     margin-bottom: 40px;
   }
   @media screen and (max-width: ${({theme}) => theme.screen.width.tablet}px) {
-    width: ${({theme}) => theme.screen.width.mobile}px;
+    /* Fluid on phones with a 20px gutter, matching the Robotaxi page */
+    width: calc(100% - 40px);
     margin-bottom: 40px;
   }
   /* Disabled for performance issues */
@@ -95,8 +96,8 @@ const Contents = styled.div`
   }
 
   @media screen and (max-width: ${({theme}) => theme.screen.width.tablet}px) {
-    padding: 40px ${({theme}) => theme.screen.padding.mobile}px;
-    width: ${({theme}) => theme.screen.width.mobile - theme.screen.padding.mobile * 2}px;
+    padding: 32px 24px;
+    width: auto;
   }
 `
 
@@ -112,7 +113,7 @@ const LeftContainer = styled.div`
   }
 
   @media screen and (max-width: ${({theme}) => theme.screen.width.tablet}px) {
-    width: ${({theme}) => theme.screen.width.mobile - theme.screen.padding.mobile * 2}px;
+    width: 100%;
   }
 `
 
@@ -125,10 +126,11 @@ const Medium = styled.div`
 
 const btnContainerProps = { empty: Boolean }
 const ButtonContainer = styled('div', btnContainerProps)`
+  margin-bottom: 24px;
+  margin-top: ${(props) => props.empty ? 40 : 28}px;
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
-    margin-top: 32px;
+    margin-top: 40px;
   }
-  margin-top: ${(props) => props.empty ? 32 : 0}px;
 `
 
 const btnProps = { primary: Boolean, secondary: Boolean, color: String }
@@ -141,7 +143,7 @@ export const StyledButton = styled('a', btnProps)`
   margin-right: 20px;
   border-radius: 24px;
   line-height: 40px;
-  color: ${(props) => props.primary ? "#eee" : props.secondary ? props.theme.card.button.text : 'black'};
+  color: ${(props) => props.primary ? (props.theme.card.button.primaryText || "#eee") : props.secondary ? props.theme.card.button.text : 'black'};
   background: ${(props) => props.primary ? props.color : props.secondary ? props.theme.card.button.background : 'white'};
   box-shadow: ${(props) => props.primary ? props.theme.card.button.boxShadow.primary : props.secondary ? props.theme.card.button.boxShadow.secondary : 'none'};
   /* Won't transition background since card can't transition. */
@@ -225,8 +227,9 @@ const StyledCarousel = styled(Carousel)`
 
 @media screen and (max-width: ${({theme}) => theme.screen.width.tablet}px) {
   &.VueCarousel {
-    width: ${({theme}) => theme.screen.width.mobile - theme.screen.padding.mobile * 2}px;
-    height: ${({theme}) => (theme.screen.width.mobile - theme.screen.padding.mobile * 2) * 8.8 / 16}px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8.8;
   }
 }
 `

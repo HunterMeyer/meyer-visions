@@ -4,7 +4,7 @@
       <product-title>{{name}}</product-title>
       <paragraph>{{description}}</paragraph>
     </contents>
-    <div>
+    <div v-if="link">
       <styled-button
         :href="link.url"
         :title="link.title"

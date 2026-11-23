@@ -1,9 +1,9 @@
 export default {
   author: "Meyer Visions",
   hero: {
-    subtitle: "Funding the Future.",
-    description: "Meyer Visions is a venture capital firm that invests early in founders building fast-growing technology companies.",
-    cta: "Browse Companies",
+    subtitle: "Building the Future.",
+    description: "Meyer Visions is a Jacksonville-based venture studio. We build, back and operate companies in mobility, clean energy and software, from our own ventures to early bets on founders we believe in.",
+    cta: "Explore Ventures",
   },
   quote: {
     text: "Our mission is to launch the innovators building companies that share our vision of creating a sustainable, equitable, and rewarding future.",
@@ -22,6 +22,26 @@ export default {
   companies: {
     featured: [
       {
+        name: "Jacksonville Robotaxi Fleet",
+        medium: "Autonomous Rideshare",
+        summary: "Go Anywhere in Jacksonville. Anytime.",
+        copy: [
+          "We're planning a Robotaxi fleet for Jacksonville, from daily commutes and airport runs to game days and nights out, and building a network of preferred pickup and drop-off partners ahead of launch.",
+        ],
+        links: {
+          color: "#0670c8",
+          primary: {
+            name: "Learn more & join",
+            url: "/robotaxi",
+            title: "Learn about our Jacksonville Robotaxi fleet plan",
+            target: "_self"
+          }
+        },
+        images: [
+          "/companies/robotaxi/cybercab.webp",
+        ]
+      },
+      {
         name: "UpSchool",
         medium: "Education · Gig-Economy",
         summary: "Homeschool Curriculum Marketplace.",
@@ -29,7 +49,7 @@ export default {
           "Marketplace to find and sell certified homeschool courses and curriculum.",
         ],
         links: {
-          color: "#363636",
+          color: "#0670c8",
         },
         images: [
           "/companies/up-school/0.webp",
@@ -44,12 +64,7 @@ export default {
           "The social community platform that prioritizes creators' connection to their fans.",
         ],
         links: {
-          color: "#363636",
-          primary: {
-            name: "Learn more",
-            url: "https://backspacethat.com",
-            title: "Open Backspace website"
-          }
+          color: "#0670c8"
         },
         images: [
           "/companies/backspace/0.webp",
@@ -64,12 +79,7 @@ export default {
           "Next Bolt is a home battery that powers during the day and charges at night, saving you money and reduces emissions.",
         ],
         links: {
-          color: "#363636",
-          primary: {
-            name: "Learn more",
-            url: "https://nextthing.tech/",
-            title: "Open Next Bolt website"
-          }
+          color: "#0670c8"
         },
         images: [
           "/companies/next-bolt/0.webp",
@@ -85,12 +95,7 @@ export default {
           "SolarGaps smart blinds track the sun and generate electricity from its energy. Reducing your energy bill and carbon footprint."
         ],
         links: {
-          color: "#363636",
-          primary: {
-            name: "Learn more",
-            url: "https://solargaps.com",
-            title: "Open SolarGaps website"
-          }
+          color: "#0670c8"
         },
         images: [
           "/companies/solargaps/0.webp",
@@ -107,12 +112,7 @@ export default {
           "We blend the magic of storytelling, with a mastery of AI, to create authentic influencer marketing programs.",
         ],
         links: {
-          color: "#363636",
-          primary: {
-            name: "Learn more",
-            url: "https://www.radintel.ai/",
-            title: "Open RAD AI website"
-          }
+          color: "#0670c8"
         },
         images: [
           "/companies/rad-ai/0.webp",
@@ -128,12 +128,7 @@ export default {
           "Record your songs in real time with 1:1 professional musicians and sound engineers.",
         ],
         links: {
-          color: "#363636",
-          primary: {
-            name: "Learn more",
-            url: "https://musiversal.com",
-            title: "Open Musiversal website"
-          }
+          color: "#0670c8"
         },
         images: [
           "/companies/musiversal/0.webp",
@@ -144,26 +139,16 @@ export default {
     // Only supports 0-3 at the moment
     minor: [
       {
-        name: "Jr.DevJobs",
-        description: "Jobs for junior software developers.",
-        link: {
-          name: "Visit",
-          url: "https://www.jrdevjobs.com",
-          title: "Open Jr.DevJobs website"
-        }
+        name: "Franchisor consulting",
+        description: "Helping franchisors execute on and scale their growth."
       },
       {
-        name: "MonthlyStash",
-        description: "Delivering CBD to the world.",
-        link: {
-          name: "Visit",
-          url: "https://www.monthlystash.com",
-          title: "Open MonthlyStash website"
-        }
+        name: "Jr.DevJobs",
+        description: "Largest professional network for junior software developers."
       },
       {
         name: "Coming soon...",
-        description: "Your company could be here!",
+        description: "Building something? Let's talk.",
         link: {
           name: "Contact us",
           url: "mailto:contact@meyervisions.com",
@@ -173,7 +158,7 @@ export default {
     ]
   },
   footer: {
-    tagline: "Meyer Visions · Funding the Future",
+    tagline: "Meyer Visions · Building the Future",
     links: [
       {
         title: "Meyer Visions on X",

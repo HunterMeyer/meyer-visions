@@ -1,26 +1,28 @@
 export default {
   hero: {
     background: {
-      image: "/background/falcon-light.webp",
+      image: "/background/mv-light.webp",
+      // Dims the logo behind the hero text on narrow screens
+      overlay: "rgba(244,249,253,0.82)",
     }
   },
   color: {
-    link: "#005c89",
-    text: "#1d1d1f",
-    background: "linear-gradient(160deg, #efefef 0%, #ddd 40%, #ddd 100%)",
-    fallbackBackground: "#fff",
+    link: "#0670c8",
+    text: "#0b1a2a",
+    background: "linear-gradient(160deg, #f6fbff 0%, #e8f2fb 40%, #e3eef8 100%)",
+    fallbackBackground: "#f4f9fd",
   },
   card: {
     // background: "#f8f8f8",
-    background: "radial-gradient(145% 145.46% at 0% 0%, #efefef 0%, #eee 100%)",
-    boxShadow: "2px 4px 4px rgba(0,0,0,0.05), inset 1px 1px 2px hsla(0,0%,100%,0.5)",
+    background: "radial-gradient(145% 145.46% at 0% 0%, #ffffff 0%, #f1f7fc 100%)",
+    boxShadow: "2px 4px 10px rgba(6,112,200,0.08), inset 1px 1px 2px hsla(0,0%,100%,0.6)",
     carousel: {
       opacity: 1,
       boxShadow: "-10px -10px 30px rgba(255, 255, 255, 0), 10px 10px 30px rgba(0, 0, 0, 0.05)"
     },
     button: {
-      text: "#222",
-      background:  "#efefef",
+      text: "#0b1a2a",
+      background:  "#f1f7fc",
       boxShadow: {
         primary: "2px 4px 4px rgba(0,0,0,0.05), inset 1px 1px 2px hsla(0,0%,100%,0.25)",
         secondary: "2px 4px 4px rgba(0,0,0,0.05), inset 1px 1px 2px hsla(0,0%,100%,0.5)",
