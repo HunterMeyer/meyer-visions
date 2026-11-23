@@ -8,6 +8,7 @@
         <cta-section>
           <styled-button
             secondary
+            plain
             :color="'#0670c8'"
             :href="'/#companies'"
             :title="cta"
@@ -79,6 +80,11 @@ const Heading = styled.h1`
   font-size: 5rem;
   margin: 32px auto;
   font-weight: bold;
+  background: ${({theme}) => theme.headingGradient || 'none'};
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
     font-size: 72px;
   }

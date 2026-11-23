@@ -133,7 +133,8 @@ const ButtonContainer = styled('div', btnContainerProps)`
   }
 `
 
-const btnProps = { primary: Boolean, secondary: Boolean, color: String }
+// `plain` opts out of the gradient/hover styling (used by the hero CTA)
+const btnProps = { primary: Boolean, secondary: Boolean, plain: Boolean, color: String }
 export const StyledButton = styled('a', btnProps)`
   font-size: 0.66rem;
   letter-spacing: 1.2px;
@@ -143,8 +144,8 @@ export const StyledButton = styled('a', btnProps)`
   margin-right: 20px;
   border-radius: 24px;
   line-height: 40px;
-  color: ${(props) => props.primary ? (props.theme.card.button.primaryText || "#eee") : props.secondary ? props.theme.card.button.text : 'black'};
-  background: ${(props) => props.primary ? props.color : props.secondary ? props.theme.card.button.background : 'white'};
+  color: ${(props) => props.plain ? (props.theme.card.button.plainText || props.theme.card.button.text) : props.primary ? (props.theme.card.button.primaryText || "#eee") : props.secondary ? props.theme.card.button.text : 'black'};
+  background: ${(props) => props.plain ? (props.theme.card.button.plainBackground || props.theme.card.button.background) : props.primary ? (props.theme.card.button.primaryBackground || props.color) : props.secondary ? props.theme.card.button.background : 'white'};
   box-shadow: ${(props) => props.primary ? props.theme.card.button.boxShadow.primary : props.secondary ? props.theme.card.button.boxShadow.secondary : 'none'};
   /* Won't transition background since card can't transition. */
   /* transition: 0.3s background; */
@@ -152,8 +153,8 @@ export const StyledButton = styled('a', btnProps)`
     content: "";
     height: 100%;
     width: 100%;
-    background: ${({theme}) => theme.card.button.boxShadow.hover};
-    mix-blend-mode: luminosity;
+    background: ${(props) => (props.plain && props.theme.card.button.plainHover) || props.theme.card.button.boxShadow.hover};
+    mix-blend-mode: ${(props) => props.plain ? 'luminosity' : (props.theme.card.button.hoverBlend || 'luminosity')};
     position: absolute;
     left: 0;
     top: 0;

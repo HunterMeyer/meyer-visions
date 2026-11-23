@@ -12,6 +12,8 @@ export default {
     background: "linear-gradient(160deg, #f6fbff 0%, #e8f2fb 40%, #e3eef8 100%)",
     fallbackBackground: "#f4f9fd",
   },
+  // Gradient for the "Meyer Visions" heading
+  headingGradient: "linear-gradient(120deg, #0670c8 0%, #1a8fe8 50%, #38b6f0 100%)",
   card: {
     // background: "#f8f8f8",
     background: "radial-gradient(145% 145.46% at 0% 0%, #ffffff 0%, #f1f7fc 100%)",
@@ -26,8 +28,12 @@ export default {
       boxShadow: {
         primary: "2px 4px 4px rgba(0,0,0,0.05), inset 1px 1px 2px hsla(0,0%,100%,0.25)",
         secondary: "2px 4px 4px rgba(0,0,0,0.05), inset 1px 1px 2px hsla(0,0%,100%,0.5)",
-        hover: "linear-gradient(145deg, rgba(0,0,0,0.05), rgba(255,255,255,0.2))"
+        // Blue gradient light on hover
+        hover: "linear-gradient(120deg, rgba(6,112,200,0.22) 0%, rgba(128,226,248,0.45) 100%)"
       },
+      hoverBlend: "normal",
+      // Original subtle hover, kept for the hero button
+      plainHover: "linear-gradient(145deg, rgba(0,0,0,0.05), rgba(255,255,255,0.2))",
       hoverIntensity: 1
     }
   },
