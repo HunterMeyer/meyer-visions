@@ -24,10 +24,6 @@
         <paragraph>{{person.bio}}</paragraph>
       </founder>
     </founder-grid>
-    <contact-line>
-      {{about.contact.text}}
-      <a :href="`mailto:${about.contact.email}`" title="Email Meyer Visions">{{about.contact.email}}</a>
-    </contact-line>
   </section-wrap>
 </template>
 
@@ -148,15 +144,6 @@ const FounderRole = styled.p`
   margin: 0 0 16px;
 `
 
-const ContactLine = styled.p`
-  margin: 40px 0 0;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.3px;
-  & a { color: var(--link-color); font-weight: 600; text-decoration: none; }
-  & a:hover { text-decoration: underline; }
-`
-
 export default {
   components: {
     SectionWrap,
@@ -170,8 +157,7 @@ export default {
     Founder,
     FounderName,
     FounderRole,
-    Paragraph,
-    ContactLine
+    Paragraph
   },
   props: {
     about: Object

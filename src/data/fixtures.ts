@@ -38,11 +38,7 @@ export default {
         url: "https://www.linkedin.com/in/megandmurphy/",
         bio: "Megan has over ten years of experience selling, acquiring, coaching and growing franchisor businesses across the insurance, real estate, home services and financial industries."
       }
-    ],
-    contact: {
-      text: "Want to work with us?",
-      email: "contact@meyervisions.com"
-    }
+    ]
   },
   quote: {
     text: "Our mission is to launch the innovators building companies that share our vision of creating a sustainable, equitable, and rewarding future.",
@@ -198,6 +194,10 @@ export default {
   },
   footer: {
     tagline: "Meyer Visions · Building the Future",
+    contact: {
+      text: "Want to work with us?",
+      email: "contact@meyervisions.com"
+    },
     links: [
       {
         title: "Meyer Visions on X",

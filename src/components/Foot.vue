@@ -2,6 +2,10 @@
   <app-footer>
     <div>
       <author>{{footer.tagline}}</author>
+      <contact v-if="footer.contact">
+        {{footer.contact.text}}
+        <a :href="`mailto:${footer.contact.email}`" title="Email Meyer Visions">{{footer.contact.email}}</a>
+      </contact>
     </div>
     <icon-container>
       <icons
@@ -40,6 +44,17 @@ const AppFooter = styled.div`
 
 const Author = styled.p`
   text-align: center;
+  margin-bottom: 4px;
+`
+
+const Contact = styled.p`
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 0 0 16px;
+  & a { color: var(--link-color); font-weight: 600; text-decoration: none; }
+  & a:hover { text-decoration: underline; }
 `
 
 const Icons = styled.a`
@@ -65,12 +80,14 @@ export default {
   components: {
     AppFooter,
     Author,
+    Contact,
     Icons,
     IconContainer
   },
   props: {
     footer: {
       tagline: String,
+      contact: Object,
       links: Array
     }
   }
