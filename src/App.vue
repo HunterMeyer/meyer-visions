@@ -82,7 +82,8 @@ injectGlobal`
 `
 
 const CardContainer = styled.div`
-  margin-top: -60px;
+  /* Desktop: clear gap between the hero and the first company card */
+  margin-top: 40px;
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
     margin-top: -48px;
   }

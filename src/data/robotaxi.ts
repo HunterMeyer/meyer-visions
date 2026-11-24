@@ -6,7 +6,6 @@ export default {
     title: "Jacksonville Robotaxi Fleet · Meyer Visions",
   },
   hero: {
-    eyebrow: "Jacksonville, FL · Planned fleet",
     title: "Go anywhere in Jacksonville. Anytime.",
     subtitle: "Your time back, every ride.",
     description: "Meyer Visions is planning a Jacksonville-based Robotaxi fleet that makes getting around the city easier, safer and more affordable for everyone, from daily commutes and errands to airport runs, game days and nights out. As Robotaxi service expands across Florida, we're building the local groundwork so Jacksonville is ready on day one.",

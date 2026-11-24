@@ -12,7 +12,6 @@
       <section-wrap>
         <hero-grid>
           <div>
-            <eyebrow>{{content.hero.eyebrow}}</eyebrow>
             <hero-title>{{content.hero.title}}</hero-title>
             <subtitle>{{content.hero.subtitle}}</subtitle>
             <paragraph>{{content.hero.description}}</paragraph>
@@ -192,6 +191,7 @@ const HomeLink = styled.a`
   letter-spacing: 1.5px;
   text-transform: uppercase;
   & > i { margin-right: 8px; }
+  & > span { font-family: 'Sora', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; }
 `
 
 const SectionWrap = styled.section`
