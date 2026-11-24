@@ -67,7 +67,12 @@ const TextContainer = styled.div`
   margin: 10px;
 
   /* Responsive */
-  margin-top: -20px;
+  margin-top: 100px;
+
+  /* Short screens: less top margin so the button keeps room below it */
+  @media screen and (max-height: 760px) {
+    margin-top: 40px;
+  }
 
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
     width: calc(100% - 40px);
@@ -77,16 +82,19 @@ const TextContainer = styled.div`
 `
 
 const Heading = styled.h1`
+  font-family: 'Sora', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 5rem;
+  line-height: 1.08;
+  letter-spacing: -1px;
   margin: 32px auto;
-  font-weight: bold;
+  font-weight: 700;
   background: ${({theme}) => theme.headingGradient || 'none'};
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
   @media screen and (max-width: ${({theme}) => theme.screen.width.desktop}px) {
-    font-size: 72px;
+    font-size: clamp(40px, 12vw, 64px);
   }
 `
 

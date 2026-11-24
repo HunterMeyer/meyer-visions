@@ -13,7 +13,7 @@ export default {
     fallbackBackground: "#f4f9fd",
   },
   // Gradient for the "Meyer Visions" heading
-  headingGradient: "linear-gradient(120deg, #0670c8 0%, #1a8fe8 50%, #38b6f0 100%)",
+  headingGradient: "linear-gradient(310deg, #0670c8 0%, #1a8fe8 50%, #38b6f0 100%)",
   card: {
     // background: "#f8f8f8",
     background: "radial-gradient(145% 145.46% at 0% 0%, #ffffff 0%, #f1f7fc 100%)",
