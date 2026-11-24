@@ -27,6 +27,7 @@
         />
       </minor-card-container>
     </card-container>
+    <about :about="about" />
     <quote
       :quote="quote.text"
       :authors="quote.authors"
@@ -50,6 +51,7 @@ import Hero from './components/Hero.vue'
 import Card from './components/Card.vue'
 import MinorCard from './components/MinorCard.vue'
 import Quote from './components/Quote.vue'
+import About from './components/About.vue'
 import Foot from './components/Foot.vue'
 import { ThemeProvider, injectGlobal } from 'vue-styled-components'
 
@@ -151,6 +153,7 @@ export default {
     CardContainer,
     LightToggle,
     Quote,
+    About,
   },
   computed: {
     theme() {

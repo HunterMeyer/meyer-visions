@@ -5,6 +5,45 @@ export default {
     description: "Meyer Visions is a Jacksonville-based venture studio. We build, back and operate companies in mobility, clean energy and software, from our own ventures to early bets on founders we believe in.",
     cta: "Explore Ventures",
   },
+  about: {
+    title: "About us",
+    intro: [
+      "Meyer Visions is run by Hunter and Megan Meyer, a husband-and-wife team based in Jacksonville, FL. We started it together to bring builders, operators and partners into one network, and to help businesses at every stage reach their next level.",
+      "We pair software and operating experience with a growing focus on local ventures that benefit the community we live in."
+    ],
+    approach: [
+      {
+        title: "Hands-on",
+        text: "We take a personal, hands-on approach and work alongside every partner."
+      },
+      {
+        title: "Patient",
+        text: "We take the time to learn each partner, their business and their customers."
+      },
+      {
+        title: "Boutique",
+        text: "We take on a limited number of new ventures each year, so each one gets our full attention."
+      }
+    ],
+    founders: [
+      {
+        name: "Hunter Meyer",
+        role: "Co-founder",
+        url: "https://www.linkedin.com/in/HRMeyer",
+        bio: "Hunter has spent a decade in software engineering and leadership at startups and publicly traded companies. He has built, acquired and funded several businesses, and is focused on developing more local efforts that benefit the Jacksonville community."
+      },
+      {
+        name: "Megan Meyer",
+        role: "Co-founder",
+        url: "https://www.linkedin.com/in/megandmurphy/",
+        bio: "Megan has over ten years of experience selling, acquiring, coaching and growing franchisor businesses across the insurance, real estate, home services and financial industries."
+      }
+    ],
+    contact: {
+      text: "Want to work with us?",
+      email: "contact@meyervisions.com"
+    }
+  },
   quote: {
     text: "Our mission is to launch the innovators building companies that share our vision of creating a sustainable, equitable, and rewarding future.",
     authors: [
